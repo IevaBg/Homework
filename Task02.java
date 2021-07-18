@@ -39,7 +39,7 @@ public class Task02 {
         int day = 31;
         int month = 12;
         int year = 3030;
-        int time = 12; //integer?
+        int time = 13; //integer?
 
 
         if (day >= 1 && day <= 31 && month >= 1 && month <=12 && year > 1000 && year <= 9999) {
@@ -47,13 +47,11 @@ public class Task02 {
 
             if (time < 12 && time >=0) {
                 System.out.println("Good Morning Sunshine!");
-            } else if (time >= 12 && time <= 13) {
-                System.out.println("Good Afternoon. Have a good day!");
-            } else if (time > 13 && time <= 19) {
-                System.out.println("Good Afternoon. Work Hard!");
-            } else if (time == 20) {
+            } else if (time == 12) {
+                System.out.println("Good Day!");
+            } else if (time >= 13 && time <= 19) {
                 System.out.println("Good Afternoon!");
-            } else if (time > 20 && time <= 24) {
+            } else if (time >= 20 && time <= 24) {
                 System.out.println("Good Evening. Get some rest!");
             }
             else {
